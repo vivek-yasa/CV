@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-column {
+    flex: 1;
+    padding: 10px;
+    background-color: #00253d;
+    color: #fff;
+}
+
+.right-column {
+    flex: 2;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.profile-image {
+    text-indent:4.8em;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+h1 {
+    border-bottom: 1px solid #00253d;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #00253d;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+.left-column h2 {
+    color: #fff;
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-top: 1em;
+    text-indent: 0.30em;
+}
+
+a {
+    color: #00253d;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+    line-height: 1.4;
+    font-size: 16px;
+    text-indent: 1em; 
+}
+
+/* Added spacing between headings and content */
+.left-column h2 {
+    margin-top: 2em;
+}
+
+.right-column h2 {
+    margin-top: 1.5em;
+}
+
+/* Indent text below headings */
+.left-column p,
+.right-column p,
+.left-column ul,
+.right-column ul {
+    text-indent: 1em;
+}
+.left-column p{
+    text-indent:2em;
+}
+
+.left-column a {
+    text-decoration: none;
+}
+
+/* Added bullet points for list items in the right column */
+.left-column ul {
+    list-style: disc;
+    padding-left: 30px;
+}
+
+.right-column ul {
+    padding-left: 20px;
+}
+
+.right-column li {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.right-column li::before {
+    content: '\2022'; /* Bullet point character */
+    color: #00253d;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: -15px;
+}
+
+hr {
+    border: 1px solid #00253d;
+    margin-bottom: 20px;
+}
